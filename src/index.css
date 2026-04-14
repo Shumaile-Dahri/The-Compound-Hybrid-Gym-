@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Helvetica Neue", "Arial Narrow", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  --color-primary: #E31837;
+  --color-surface: #151515;
+  --color-bg: #0A0A0A;
+  --color-text-dim: #A0A0A0;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-white font-sans antialiased;
+  }
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+  color: transparent;
+}
+
